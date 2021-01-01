@@ -27,6 +27,11 @@
               About
             </nuxt-link>
           </li>
+          <li>
+            <nuxt-link :to="{name:'asyncData'}">
+              asyncData
+            </nuxt-link>
+          </li>
         </ul>
       </div>
     </div>

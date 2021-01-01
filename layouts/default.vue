@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>雷小天科技网</p>
     <Nuxt />
   </div>
 </template>

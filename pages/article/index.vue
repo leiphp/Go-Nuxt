@@ -11,7 +11,7 @@
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="{name:'article-id',params:{id:123}}">
+          <nuxt-link :to="{name:'article-id',params:{id:123,title:'雷小天博客详情页'}}">
             article-123
           </nuxt-link>
         </li>
