@@ -6,22 +6,28 @@
         Go-Nuxt
       </h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <ul>
+          <li>
+            <nuxt-link :to="{name:'index'}">
+              Home
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{name:'article'}">
+              Article
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{name:'article-detail',params:{id:3226}}">
+              Detail
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{name:'about'}">
+              About
+            </nuxt-link>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
