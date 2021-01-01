@@ -20,3 +20,14 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+### 修改默认配置  
+package.json中修改  
+```bash
+"config":{
+  "nuxt":{
+    "host":"127.0.0.1",
+    "port":"3000
+  }
+}
+```
