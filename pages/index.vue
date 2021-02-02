@@ -39,11 +39,11 @@
 </template>
 
 <script>
-import http from '../utils/http'
+import api from '../utils/api'
 export default {
   asyncData () {
     console.log('test load data...')
-    http.requestGet('http://localhost:8181/v1/user').then((res) => {
+    api.getCategories().then((res) => {
       console.log('result', res)
     })
     // return axios.get('xxx').then((res) => {
