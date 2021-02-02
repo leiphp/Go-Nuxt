@@ -39,7 +39,18 @@
 </template>
 
 <script>
-export default {}
+import http from '../utils/http'
+export default {
+  asyncData () {
+    console.log('test load data...')
+    http.requestGet('http://localhost:8181/v1/user').then((res) => {
+      console.log('result', res)
+    })
+    // return axios.get('xxx').then((res) => {
+    //   return { info: res.data }
+    // })
+  }
+}
 </script>
 
 <style>

@@ -14,5 +14,13 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "vue/singleline-html-element-content-newline": "off",
+    "vue/multiline-html-element-content-newline":"off",
+    // "no-console": [true, "log", "error"],
+    "no-console":"off",
+    'arrow-parens': 'off',
+    'no-multi-spaces':'off',
+    "indent": ["off"]
+  }
 }
