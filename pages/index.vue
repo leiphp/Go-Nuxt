@@ -375,7 +375,7 @@ export default {
 }
 .content-aside{
   /* border: 1px solid red; */
-  width: 35%;
+  /* width: 35%; */
   /* height: 1500px; */
 }
 .public-style {
@@ -613,7 +613,7 @@ export default {
 .hot-box {
     border: #ddd 1px solid;
     margin-top: 10px;
-    width: 333px;
+    /* width: 333px; */
     background: #efefef;
 }
 .hot-box-title {
