@@ -247,6 +247,27 @@
       </div>
       </div>
     </div>
+    <!--业界酷玩-->
+    <div class="content">
+    <!--业界酷玩导航-->
+      <article class="internet public-style">
+        <div class="internet-header public-header"> <i class="iconfont icon-xinwen"></i>
+          <p class="title">业界酷玩</p>
+          <ul>
+            <li><a href="{:url('index/content/lists?model=article',array('id'=>15))}" target="_blank">通信</a></li>
+            <li class="line">|</li>
+            <li><a href="{:url('index/content/lists?model=article',array('id'=>16))}" target="_blank">互联网</a></li>
+            <li class="line">|</li>
+            <li><a href="{:url('index/content/lists?model=article',array('id'=>17))}" target="_blank">IT业界</a></li>
+            <li class="line">|</li>
+            <li><a href="{:url('index/content/lists?model=article',array('id'=>18))}" target="_blank">云计算</a></li>
+            <li class="line">|</li>
+            <li><a href="{:url('index/content/lists?model=article',array('id'=>13))}" target="_blank">焦点人物</a></li>
+          </ul>
+        </div>
+      </article>
+      </div>
+     <!--业界酷玩导航-->
   </div>
 </template>
 
@@ -324,12 +345,13 @@ export default {
 </script>
 
 <style>
+ /* @import '../assets/css/style2018.css'; */
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   text-align: center;
 }
 .content {
@@ -591,7 +613,7 @@ export default {
 .hot-box {
     border: #ddd 1px solid;
     margin-top: 10px;
-    /* width: 333px; */
+    width: 333px;
     background: #efefef;
 }
 .hot-box-title {
@@ -668,6 +690,11 @@ export default {
 .ad300-box img {
     width: 300px !important;
 }
+/* 业界酷玩 */
+.public-style .public-header {
+    padding: 10px 0 18px;
+}
+
 /* .title {
   font-family:
     'Quicksand',
