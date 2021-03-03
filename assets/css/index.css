@@ -505,7 +505,8 @@ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/star_
 }
 /*互联网*/
 .public-style .public-header {
-	padding: 10px 0 18px;
+  padding: 10px 0 18px;
+  text-align: left;
 }
 .public-style .public-header p {
 	display: inline-block;
@@ -635,7 +636,7 @@ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/star_
 	width: 1000px;
 	height: auto;
 	position: relative;
-	float: left;
+	/* float: left; */
 	overflow: hidden;
 	margin-top: 30px;
 }
@@ -745,8 +746,9 @@ footer {
 	background-color: #f5f5f5;
 	line-height: 28px;
 	overflow: hidden;
-	float: left;
-	margin-top: 20px;
+	/* float: left; */
+  margin-top: 20px;
+  text-align: left;
 }
 .sitemap-con+.sitemap-con {
 	margin-left: 20px;

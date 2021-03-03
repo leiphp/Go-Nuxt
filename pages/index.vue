@@ -381,6 +381,153 @@
     </aside>
     </div>
      <!--业界酷玩导航-->
+
+  <!--探索-->
+   <!--探索导航-->
+     <article class="internet public-style">
+      <div class="internet-header public-header"> <i class="iconfont icon-xinwen"></i>
+        <p class="title">科普科学</p>
+        <ul>
+          <li><a href="{:url('index/content/lists?model=article',array('id'=>28))}" target="_blank">科教</a></li>
+          <li class="line">|</li>
+          <li><a href="{:url('index/content/lists?model=article',array('id'=>29))}" target="_blank">医学健康</a></li>
+          <li class="line">|</li>
+          <li><a href="{:url('index/content/lists?model=article',array('id'=>30))}" target="_blank">探索</a></li>
+          <li class="line">|</li>
+          <li><a href="{:url('index/content/lists?model=article',array('id'=>31))}" target="_blank">自然地理</a></li>
+        </ul>
+      </div>
+    </article>
+   <!--探索导航-->
+  <div class="content">
+    <!--探索内容-->
+    <!-- 左边 -->
+    <div class="content-left">
+      <!--探索-->
+      <article class="isgood public-style">
+        <div class="isgood-header">
+          <p class="title">探索</p>
+        </div>
+        <div class="isgood-box">
+          <div class="isgood-pic clearfix">
+           <h3><a href="/article/detail-187.html" target="_blank" title="春运抢票火热进行中，12306客户端为何一再强退">春运抢票火热进行中，12306客户端为何一再强退</a></h3>
+            <a href="/article/detail-187.html" target="_blank">
+              <img src="https://www.lxtkj.cn/public/images/default.png" width="90" height="60" alt="春运抢票火热进行中，12306客户端为何一再强退">
+            </a>
+            <p>随着春运的开始，一年一度的抢票大战又拉开帷幕，有网友爆料...<span class="red"><a href="/article/detail-187.html" target="_blank">[详细]</a></span>
+            </p>
+          </div>
+          <ul class="isgood-ul">
+            <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+            <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+            <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+            <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          </ul>
+        </div>
+      </article>
+      <div class="clear"></div>
+    </div>
+    <!-- 右边 -->
+    <div class="content-right">
+      <!--科教-->
+     <div class="right-con news public-style" style="border-bottom:none;">
+        <div class="isgood-header">
+          <p class="title">科教</p>
+        </div>
+        <ul class="news-content">
+          <li class="news-title"><a href="/article/detail-72.html" target="_blank">奥佳华按摩椅OG-7608震撼登场 科技感十足</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+      </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <aside>
+      <article class="aside-box">
+        <div class="aside-con">
+         <!--医学健康-->
+          <div class="news public-style" style="border-bottom:none;">
+            <div class="isgood-header">
+              <p class="title">医学健康</p>
+            </div>
+            <ul class="news-content">
+              <li class="news-title"><a href="/article/detail-72.html" target="_blank">奥佳华按摩椅OG-7608震撼登场 科技感十足</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </article>
+      <div class="clear"></div>
+    </aside>
+  <!--探索内容-->
+  </div>
+<!--探索-->
+  <!--底部大图-->
+  <div class="bottom-carousel">
+    <div class="carousel_box">
+      <div class="carousel-l">
+        <a href="#" target="_blank">
+        <img src="https://www.newskj.org/d/file/news/Dphoto/2021-02-27/78395b13bcf1c9d4277671391e85b9b9.jpg" alt="LG 为其美版手机推送安卓 11 更新，第一个获得升级的是 V60" width="500" height="300">
+      </a>
+        <h2> <a href="#" target="_blank">LG 为其美版手机推送安卓 11 更新，第一个获得升级的是 V60</a></h2>
+      </div>
+      <div class="carousel-r">
+        <div class="carousel-r-b">
+          <div class="carousel-img">
+            <a href="#" target="_blank">
+              <img src="https://www.newskj.org/d/file/news/Dphoto/2021-02-27/78395b13bcf1c9d4277671391e85b9b9.jpg" width="247" height="149">
+            </a>
+            <h2><a href="#" target="_blank">LG 为其美版手机推送安卓 11 更新，第一个获得升级的是 V60</a> </h2>
+          </div>
+          <div class="carousel-img">
+            <a href="#" target="_blank">
+              <img src="https://www.newskj.org/d/file/news/Dphoto/2021-02-27/78395b13bcf1c9d4277671391e85b9b9.jpg" width="247" height="149">
+            </a>
+            <h2><a href="#" target="_blank">LG 为其美版手机推送安卓 11 更新，第一个获得升级的是 V60</a> </h2>
+          </div>
+          <div class="carousel-img">
+            <a href="#" target="_blank">
+              <img src="https://www.newskj.org/d/file/news/Dphoto/2021-02-27/78395b13bcf1c9d4277671391e85b9b9.jpg" width="247" height="149">
+            </a>
+            <h2><a href="#" target="_blank">LG 为其美版手机推送安卓 11 更新，第一个获得升级的是 V60</a> </h2>
+          </div>
+          <div class="carousel-img">
+            <a href="#" target="_blank">
+              <img src="https://www.newskj.org/d/file/news/Dphoto/2021-02-27/78395b13bcf1c9d4277671391e85b9b9.jpg" width="247" height="149">
+            </a>
+            <h2><a href="#" target="_blank">LG 为其美版手机推送安卓 11 更新，第一个获得升级的是 V60</a> </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--底部大图-->
+  <div class="sitemap-con blogroll">
+    <strong class="title"><a href="javascript:void()">友情链接</a></strong>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+      <a href="www.100txy.com" title="雷小天博客" target="_blank">雷小天博客</a>
+  </div>
   </div>
 </template>
 
