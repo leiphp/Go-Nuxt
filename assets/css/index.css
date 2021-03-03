@@ -496,7 +496,7 @@ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/star_
 .ad300-box {
 	padding: 6px 7px 6px 6px;
 	margin: 10px 0px 10px 10px;
-	width: 300px;
+	width: 315px;
 	background: #fff;
 	border: #ddd 1px solid;
 }
@@ -543,7 +543,8 @@ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/star_
 	padding: 10px 0 18px;
 	position: relative;
 	box-sizing: border-box;
-	font-size: 0;
+  font-size: 0;
+  text-align: left;
 }
 .aside-con .isgood-header p {
 	display: inline-block;

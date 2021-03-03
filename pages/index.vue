@@ -248,10 +248,8 @@
       </div>
     </div>
     <!--业界酷玩-->
-    <div class="content">
-    <!--业界酷玩导航-->
-      <article class="internet public-style">
-        <div class="internet-header public-header"> <i class="iconfont icon-xinwen"></i>
+    <article class="internet public-style">
+        <div class="internet-header public-header" style="text-align: left;"> <i class="iconfont icon-xinwen"></i>
           <p class="title">业界酷玩</p>
           <ul>
             <li><a href="{:url('index/content/lists?model=article',array('id'=>15))}" target="_blank">通信</a></li>
@@ -266,7 +264,122 @@
           </ul>
         </div>
       </article>
+    <div class="content">
+    <!--业界酷玩导航-->
+      <!-- 左边 -->
+    <div class="content-left">
+       <!--通信-->
+      <article class="isgood public-style">
+        <div class="isgood-header">
+          <p class="title">通信</p>
+        </div>
+        <div class="isgood-box">
+          <div class="isgood-pic clearfix">
+            <h3><a href="/article/detail-187.html" target="_blank" title="春运抢票火热进行中，12306客户端为何一再强退">春运抢票火热进行中，12306客户端为何一再强退</a></h3>
+              <a href="/article/detail-187.html" target="_blank">
+                <img src="https://www.lxtkj.cn/public/images/default.png" width="90" height="60" alt="春运抢票火热进行中，12306客户端为何一再强退">
+              </a>
+              <p>随着春运的开始，一年一度的抢票大战又拉开帷幕，有网友爆料...<span class="red"><a href="/article/detail-187.html" target="_blank">[详细]</a></span>
+              </p>
+          </div>
+          <ul class="isgood-ul">
+              <li class="isgood-li"> <a href="/article/detail-186.html">快手起诉快手快影侵权，要求赔偿100万元</a> </li>
+              <li class="isgood-li"> <a href="/article/detail-185.html">苹果股价暴跌，然而这或许只是一个开始</a> </li>
+              <li class="isgood-li"> <a href="/article/detail-182.html">高通与苹果在华专利纠纷，iPhone手机在国内市场禁售</a> </li>
+              <li class="isgood-li"> <a href="/article/detail-174.html">淘宝退款崩了！难道是剁手党提起刀下不了手后悔了？</a> </li>
+          </ul>
+        </div>
+      </article>
+      <div class="clear"></div>
+       <!--互联网-->
+      <article class="isgood public-style">
+        <div class="isgood-header">
+          <p class="title">互联网</p>
+        </div>
+        <div class="isgood-box">
+          <div class="isgood-pic clearfix">
+           <h3><a href="/article/detail-187.html" target="_blank" title="春运抢票火热进行中，12306客户端为何一再强退">春运抢票火热进行中，12306客户端为何一再强退</a></h3>
+            <a href="/article/detail-187.html" target="_blank">
+              <img src="https://www.lxtkj.cn/public/images/default.png" width="90" height="60" alt="春运抢票火热进行中，12306客户端为何一再强退">
+            </a>
+            <p>随着春运的开始，一年一度的抢票大战又拉开帷幕，有网友爆料...<span class="red"><a href="/article/detail-187.html" target="_blank">[详细]</a></span>
+            </p>
+          </div>
+          <ul class="isgood-ul">
+              <li class="isgood-li"> <a href="/article/detail-186.html">快手起诉快手快影侵权，要求赔偿100万元</a> </li>
+              <li class="isgood-li"> <a href="/article/detail-185.html">苹果股价暴跌，然而这或许只是一个开始</a> </li>
+              <li class="isgood-li"> <a href="/article/detail-182.html">高通与苹果在华专利纠纷，iPhone手机在国内市场禁售</a> </li>
+              <li class="isgood-li"> <a href="/article/detail-174.html">淘宝退款崩了！难道是剁手党提起刀下不了手后悔了？</a> </li>
+              <li class="isgood-li"> <a href="/article/detail-152.html">中国正建造价值10亿超导计算机 港媒：或改变世界</a> </li>
+          </ul>
+        </div>
+      </article>
+      <div class="clear"></div>
+    </div>
+    <div class="content-right">
+     <!--IT业界-->
+      <div class="right-con news public-style" style="border-bottom:none;" >
+        <div class="isgood-header">
+          <p class="title">IT业界</p>
+        </div>
+        <ul class="news-content">
+         <li class="news-title"><a href="/article/detail-72.html" target="_blank">奥佳华按摩椅OG-7608震撼登场 科技感十足</a></li>
+         <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+         <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+         <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+         <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+         <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+        </ul>
       </div>
+      <div class="clear"></div>
+      <!--云计算-->
+       <div class="right-con news public-style" style="border-bottom:none;" >
+         <div class="isgood-header">
+           <p class="title">云计算</p>
+         </div>
+         <ul class="news-content">
+          <li class="news-title"><a href="/article/detail-72.html" target="_blank">奥佳华按摩椅OG-7608震撼登场 科技感十足</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+        </ul>
+       </div>
+
+    </div>
+    <aside>
+      <article class="aside-box">
+        <div class="aside-con">
+          <!--焦点人物-->
+          <div class="news public-style" style="border-bottom:none;" >
+            <div class="isgood-header">
+              <p class="title">焦点人物</p>
+            </div>
+            <ul class="news-content">
+              <li class="news-title"><a href="/article/detail-72.html" target="_blank">奥佳华按摩椅OG-7608震撼登场 科技感十足</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+              <li><a href="/article/detail-71.html" target="_blank">小身材大作为 解读电装机器人的前世今生</a></li>
+          </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </article>
+      <div class="clear"></div>
+        <!--广告2-->
+      <div class="ad300">
+        <div class="ad300-box">
+          <!-- 科技首页右侧二 -->
+          <a href="http://www.chuanboyi.com/mcn.html" target="_blank">
+            <img src="https://www.newskj.org/d/file/p/2019-05-31/7785ce6310cd9393a7c9630e64a16b10.jpg" border="0" width="300" height="250" alt="朝闻天下知识产权">
+          </a>
+          <!-- 科技首页右侧二 end-->
+        </div>
+      </div>
+      <div class="clear"></div>
+    </aside>
+    </div>
      <!--业界酷玩导航-->
   </div>
 </template>
