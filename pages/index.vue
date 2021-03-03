@@ -165,47 +165,30 @@
 
       <div class="content-aside">
       <!--焦点图-->
-      <article class="carousel">
-        <div class="section-focus-pic" id="section-focus-pic">
-          <div class="pages" data-scro="list">
-            <ul>
-              <li class="item" style="left: 0px;">
-                <a href="/article/detail-184.html" target="_blank"><img src="https://www.lxtkj.cn/uploads/picture/20181215/7de5137cbd480ac4a226e79bdb85ce31.jpg" width="335" height="200" alt="支付宝刷脸支付产品 即将开启支付新时代"></a>
-                <h3><a href="/article/detail-184.html" target="_blank" style="color:#FFF;text-decoration:none;">支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</a></h3>
-                <div></div>
-              </li>
-              <li class="item">
-                <a href="/article/detail-183.html" target="_blank"><img src="https://www.lxtkj.cn/uploads/picture/20181215/3f4791065efcc361a66ffe221f19d4e9.jpg" width="335" height="200" alt="未来几年VR产品对生活的影响"></a>
-                <h3><a href="/article/detail-183.html" target="_blank" style="color:#FFF;text-decoration:none;">未来几年VR产品对生活的影响</a></h3>
-                <div></div>
-              </li>
-              <li class="item">
-                <a href="/article/detail-182.html" target="_blank"><img src="https://www.lxtkj.cn/uploads/picture/20181215/7e00c1cf5660a148121828fd72dd4521.jpg" width="335" height="200" alt="高通与苹果在华专利纠纷，iPhone手机在国内市场禁售"></a>
-                <h3><a href="/article/detail-182.html" target="_blank" style="color:#FFF;text-decoration:none;">高通与苹果在华专利纠纷，iPhone手机在国内市场禁售</a></h3>
-                <div></div>
-              </li>
-              <li class="item">
-                <a href="/article/detail-175.html" target="_blank"><img src="https://www.lxtkj.cn/uploads/picture/20181113/d194394bca6ef99063c8ffe71928e3eb.jpg" width="335" height="200" alt="王者荣耀为什么在上分最后一把总容易遇到坑B？"></a>
-                <h3><a href="/article/detail-175.html" target="_blank" style="color:#FFF;text-decoration:none;">王者荣耀为什么在上分最后一把总容易遇到坑B？</a></h3>
-                <div></div>
-              </li>
-              </ul>
-          </div>
-          <div class="controler" data-scro="controler"> <b class="down">1</b> <b class="">2</b> <b class="">3</b> <b class="">4</b> </div>
-          <div class="controler2" data-scro="controler2"> <a href="javascript:;" class="prev"><i></i></a> <a href="javascript:;" class="next"><i></i></a> </div>
-        </div>
-      </article>
+      <el-carousel>
+        <ul>
+        <el-carousel-item v-for="item in focusNews" :key="item">
+          <!-- <h3>{{ item.title }}</h3> -->
+            <li class="item" style="left: 0px;">
+                  <a href="/article/detail-184.html" target="_blank"><img :src="item.imgsrc"  height="250" :alt="item.title"></a>
+                  <h3><a href="/article/detail-184.html" target="_blank" style="color:#FFF;text-decoration:none;">{{ item.title }}</a></h3>
+                  <div></div>
+            </li>
+        </el-carousel-item>
+        </ul>
+      </el-carousel>
 
       <!--排行榜-->
       <article class="hot-box">
-        <div class="hot-box-title"> 点击排行
+        <div class="hot-box-title">
+          <div style="text-align:left;"><p>点击排行</p></div>
           <div style="position: absolute; top: 8px; left: 185px"> <img border="0" src="https://www.lxtkj.cn/template/keji/static/picture/pic001.jpg" width="113" height="27"> </div>
         </div>
         <div id="tab">
-          <h3 class="up" id="two1" onmouseover="setContentTab('two',1,2)">今日点击</h3>
-          <h3 id="two2" onmouseover="setContentTab('two',2,2)" class="">本周点击</h3>
+          <h3 :class="dayclass" id="two1"  @mouseover="mouseOver" @mouseleave="mouseLeave">今日点击</h3>
+          <h3 id="two2" @mouseover="mouseOverWeek" @mouseleave="mouseLeaveWeek" :class="weekclass">本周点击</h3>
           <div class="clear"></div>
-          <div class="block" id="con_two_1" style="display: block;">
+          <div class="block" id="con_two_1" :style="daystyle">
             <ul>
               <li><span class="first">1</span>
                 <a class="tab_title" href="/article/detail-178.html">电脑网络连接中的以太网和本地连接有什么区别?</a>
@@ -228,25 +211,25 @@
             </ul>
           </div>
           <div class="clear"></div>
-          <div id="con_two_2" style="display: none;">
+          <div id="con_two_2" :style="weekstyle">
             <ul>
               <li><span class="first">1</span>
-                <a class="tab_title" href="/article/detail-178.html">电脑网络连接中的以太网和本地连接有什么区别?</a>
+                <a class="tab_title" href="/article/detail-178.html">22电脑网络连接中的以太网和本地连接有什么区别?</a>
               </li>
               <li><span class="num01">2</span>
-                <a class="tab_title" href="/article/detail-175.html">王者荣耀为什么在上分最后一把总容易遇到坑B？</a>
+                <a class="tab_title" href="/article/detail-175.html">22王者荣耀为什么在上分最后一把总容易遇到坑B？</a>
               </li>
               <li><span class="num01">3</span>
-                <a class="tab_title" href="/article/detail-11.html">京东再强又怎样 百度竞价排名坐地收钱无成本</a>
+                <a class="tab_title" href="/article/detail-11.html">22京东再强又怎样 百度竞价排名坐地收钱无成本</a>
               </li>
               <li><span class="num01">4</span>
-                <a class="tab_title" href="/article/detail-154.html">中国互联网市场下沉 三四五线城市会出下一个BAT?</a>
+                <a class="tab_title" href="/article/detail-154.html">22中国互联网市场下沉 三四五线城市会出下一个BAT?</a>
               </li>
               <li><span class="num01">5</span>
-                <a class="tab_title" href="/article/detail-59.html">牛津大学开发VR成功治疗恐高症</a>
+                <a class="tab_title" href="/article/detail-59.html">22牛津大学开发VR成功治疗恐高症</a>
               </li>
               <li><span class="num01">6</span>
-                <a class="tab_title" href="/article/detail-43.html">苹果升级iPhone安全性：拒绝暴力破解</a>
+                <a class="tab_title" href="/article/detail-43.html">22苹果升级iPhone安全性：拒绝暴力破解</a>
               </li>
             </ul>
           </div>
@@ -254,7 +237,11 @@
       </article>
       <!--广告1-->
       <div class="ad300">
-        xx
+        <div class="ad300-box">
+        <a href="http://www.chuanboyi.com/mcn.html" target="_blank">
+          <img src="https://www.newskj.org/d/file/p/2020-05-21/5e7385ab56e111b0c5c5f681a1019e8c.jpg" border="0" width="300" height="250" alt="朝闻天下知识产权">
+        </a>
+        </div>
       </div>
       </div>
     </div>
@@ -264,6 +251,38 @@
 <script>
 import api from '../utils/api'
 export default {
+  data () {
+    return {
+      name: 'Hello World',
+      active: 'background-color:red',
+      daystyle: 'display: block;',
+      weekstyle: 'display: none;',
+      dayclass: 'up',
+      weekclass: '',
+      focusNews: {
+        0: {
+          title: '支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代',
+          imgsrc: 'https://www.newskj.org/d/file/news/yjs/2021-02-27/d2743aa55adc5f06cdbbcffd2e586d33.jpg',
+          path: 'https://www.lxtkj.cn/article/detail-184.html'
+        },
+        1: {
+          title: '未来几年VR产品对生活的影响',
+          imgsrc: 'https://www.newskj.org/d/file/news/kxts/2021-02-27/28be88dad48885ddf6c86fe2ff7b029c.jpg',
+          path: 'https://www.lxtkj.cn/article/detail-184.html'
+        },
+        2: {
+          title: '高通与苹果在华专利纠纷，iPhone手机在国内市场禁售',
+          imgsrc: 'https://www.newskj.org/d/file/news/kjsh/2021-02-26/d2fbe85f45ec31fe039cc036255a05b5.jpg',
+          path: 'https://www.lxtkj.cn/article/detail-184.html'
+        },
+        3: {
+          title: '王者荣耀为什么在上分最后一把总容易遇到坑B？',
+          imgsrc: 'https://www.newskj.org/d/file/news/kejiao/2021-02-27/60cbb0f563f286ce4b4c8c9ffb81278e.jpg',
+          path: 'https://www.lxtkj.cn/article/detail-184.html'
+        }
+      }
+    }
+  },
   asyncData () {
     console.log('test load data...')
     api.getCategories().then((res) => {
@@ -272,6 +291,32 @@ export default {
     // return axios.get('xxx').then((res) => {
     //   return { info: res.data }
     // })
+  },
+  methods: {
+    // 移入
+    mouseOver () {
+      this.daystyle = 'display: block;'
+      this.weekstyle = 'display: none;'
+      this.dayclass = 'up'
+      this.weekclass = ''
+      console.log(111111111)
+    },
+    // 移出
+    mouseLeave () {
+      console.log(22222222222222)
+    },
+    // 周排行移入
+    mouseOverWeek () {
+      this.daystyle = 'display: none;'
+      this.weekstyle = 'display: block;'
+      this.dayclass = ''
+      this.weekclass = 'up'
+      console.log(33333333333333)
+    },
+    // 移出
+    mouseLeaveWeek () {
+      console.log(4444444444444)
+    }
   }
 }
 </script>
@@ -286,26 +331,26 @@ export default {
   text-align: center;
 }
 .content {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   min-width: 320px;
   margin: auto;
   justify-content: space-between;
 }
 .content-left{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 25%;
   /* height: 1500px; */
 }
 .content-right{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 35%;
   /* height: 1500px; */
 }
 .content-aside{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 35%;
   /* height: 1500px; */
 }
@@ -526,7 +571,101 @@ export default {
     opacity: 0.6;
     filter: alpha(opacity=60);
 }
-
+/* 跑马灯 */
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    /* line-height: 150px; */
+    margin: 0;
+  }
+  .el-carousel__item:nth-child(2n) {
+     background-color: #000;
+  }
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #000;
+  }
+/* 排行榜 */
+.hot-box {
+    border: #ddd 1px solid;
+    margin-top: 10px;
+    /* width: 333px; */
+    background: #efefef;
+}
+.hot-box-title {
+    border-bottom: #ddd 1px solid;
+    text-indent: 10px;
+    font: 14px/40px Microsoft YaHei;
+    height: 40px;
+    position: relative;
+    margin: 10px 10px 0px 10px;
+    background: #fff;
+}
+#tab {
+    background: #fff;
+    margin: 0px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#tab .up {
+    background: #fff;
+    color: #333;
+    font-weight: 700;
+    border-top: 4px solid #004276;
+}
+#tab h3 {
+    float: left;
+    /* width: 103px; */
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 0;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #c5c5c5;
+    text-align: center;
+    color: #5a5a5a;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+}
+#tab ul li {
+    border-bottom: #ddd 1px solid;
+    line-height: 34px;
+    height: 34px;
+    overflow: hidden;
+    text-align: left;
+}
+#tab ul li span.first {
+    text-indent: 4px !important;
+    width: 16px;
+    display: inline;
+    background: url(https://www.lxtkj.cn/template/keji/static/images/sprite.gif) no-repeat left -35px;
+    float: left;
+    color: #fff;
+    margin-right: 10px;
+}
+#tab ul li span.num01 {
+    padding-left: 4px;
+    width: 22px;
+    float: left;
+    color: #666;
+}
+/* 上侧边广告 */
+.ad300 {
+    margin: 10px 0px;
+    background: #efefef;
+    border: #ddd 1px solid;
+}
+.ad300-box {
+    padding: 6px 7px 6px 6px;
+    margin: 10px 0px 10px 10px;
+    width: 320px;
+    background: #fff;
+    border: #ddd 1px solid;
+}
+.ad300-box img {
+    width: 300px !important;
+}
 /* .title {
   font-family:
     'Quicksand',

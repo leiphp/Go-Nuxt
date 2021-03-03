@@ -236,13 +236,13 @@
     height: 69px;
   }
   #nav .leftbar {
-    width: 20%;
+    width: 23.75%;
     background: url(https://www.lxtkj.cn/template/keji/static/images/repeat-x.gif) no-repeat -59px 0px;
     float: left;
     height: 69px;
   }
   #nav .rightbar {
-    width: 20%;
+    /* width: 20%; */
     background: url(https://www.lxtkj.cn/template/keji/static/images/repeat-x.gif) no-repeat -71px 0px;
     float: right;
     height: 69px;
@@ -253,7 +253,7 @@
     overflow: hidden;
     float: left;
     /* margin-left: 30px; */
-    width: 60%;
+    width: 1000px;
   }
   #nav .navbar li {
     height: 42px;
