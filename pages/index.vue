@@ -165,17 +165,19 @@
 
       <div class="content-aside">
       <!--焦点图-->
-      <el-carousel>
-        <ul>
-        <el-carousel-item v-for="item in focusNews" :key="item">
-          <!-- <h3>{{ item.title }}</h3> -->
-            <li class="item" style="left: 0px;">
-                  <a href="/article/detail-184.html" target="_blank"><img :src="item.imgsrc"  height="250" :alt="item.title"></a>
-                  <h3><a href="/article/detail-184.html" target="_blank" style="color:#FFF;text-decoration:none;">{{ item.title }}</a></h3>
-                  <div></div>
-            </li>
-        </el-carousel-item>
-        </ul>
+      <el-carousel height="200px">
+        <div class="section-focus-pic">
+          <ul>
+          <el-carousel-item v-for="item in focusNews" :key="item">
+            <!-- <h3>{{ item.title }}</h3> -->
+              <li class="item" style="left: 0px;">
+                    <a href="/article/detail-184.html" target="_blank"><img :src="item.imgsrc"  width="335" height="200" :alt="item.title"></a>
+                    <h3><a href="/article/detail-184.html" target="_blank" style="color:#FFF;text-decoration:none;">{{ item.title }}</a></h3>
+                    <div></div>
+              </li>
+          </el-carousel-item>
+          </ul>
+        </div>
       </el-carousel>
 
       <!--排行榜-->
@@ -551,7 +553,7 @@ export default {
 }
 .section-focus-pic ul li h3 {
     position: absolute;
-    bottom: 11px;
+    bottom: 16px;
     left: 0;
     width: 335px;
     font-weight: normal;
