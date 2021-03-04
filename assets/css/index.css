@@ -743,7 +743,7 @@ footer {
 }
 .sitemap-con {
 	height: 160px;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
 	line-height: 28px;
 	overflow: hidden;
 	/* float: left; */
@@ -754,10 +754,10 @@ footer {
 	margin-left: 20px;
 }
 .sitemap-con:hover {
-	background-color: rgba(0, 0, 0, 0.7);
+	/* background-color: rgba(0, 0, 0, 0.7); */
 }
 .sitemap-con:hover a {
-	color: #fff;
+	/* color: #fff; */
 }
 .sitemap-con a {
 	font-size: 12px;

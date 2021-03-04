@@ -86,7 +86,7 @@
     </div>
     <Nuxt />
     <!--底部-->
-     <div id="footer">
+     <!-- <div id="footer">
       <div class="center-box">
         <div class="footer-link">
           <ul class="clear-fix">
@@ -114,7 +114,21 @@
           <p>&COPY;2019 taobaounion.cn 粤IPC备 1209832号-11 code by TrillGates</p>
         </div>
       </div>
-    </div>
+    </div> -->
+    <div class="nav-bottom">
+      <div class="container">
+          <span style="top: 20px; position: relative;"><img src="https://www.lxtkj.cn/template/keji/static/picture/newskj_hit2018.png"></span>
+          <span>&#169;copy 2010-2018雷小天科技版权所有 <a href="https://www.lxtkj.cn/">lxtkj.cn</a></span>
+          <span>|</span>
+          <a href="http://www.beian.miit.gov.cn">粤ICP备16001325号-5</a>
+          <span>|</span>
+          <a target="_blank" href="{:url('index/index/about')}">关于我们</a>
+          <span>|</span>
+          <a target="_blank" href="{:url('index/index/webmap')}">网站地图</a>
+          <!-- <span style="top: 8px; position: relative;"><a target="_blank" href="https://v.pinpaibao.com.cn/cert/site/?site=www.lxtkj.cn&amp;at=realname"><img src="__PIC__/aqkx_83x30.png"></a></span> -->
+          <span style="top: 8px; position: relative;"><a href="https://webscan.360.cn/index/checkwebsite/url/lxtkj.cn"><img border="0" src="https://static.anquan.org/static/outer/image/aqkx_83x30.png" style="height:30px;"/></a></span>
+      </div>
+  </div>
   </div>
 </template>
 
