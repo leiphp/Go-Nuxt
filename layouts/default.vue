@@ -9,7 +9,7 @@
         <div class="header-menu">
           <ul>
             <li class="menu-active">股票</li>
-            <li>基金</li>
+            <li><a href="/funds">基金</a></li>
             <li>大盘</li>
             <li>科技</li>
           </ul>
@@ -354,5 +354,28 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+  }
+  /* 底部样式 */
+  .nav-bottom {
+    width: 100%;
+    height: 84px;
+    line-height: 84px;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  .nav-bottom a {
+    color: #fff;
+  }
+  .nav-bottom span {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  .nav-bottom span:first-child {
+    padding: 0;
+  }
+  .nav-bottom span:hover {
+    color: #f33;
   }
 </style>
