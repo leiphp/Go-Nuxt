@@ -3,21 +3,24 @@
     <!--顶部-->
     <div id="header">
       <div class="center-box clear-fix">
-        <div class="header-logo float-left">
-          <span>雷小天科技-金融</span>
+        <div class="header-logo">
+          <img src="../assets/images/logo.jpg" alt="雷小天科技">
         </div>
-        <div class="header-menu float-left">
+        <div class="header-menu">
           <ul>
-            <li class="menu-active">券场</li>
-            <li>发现</li>
-            <li>特惠</li>
+            <li class="menu-active">股票</li>
+            <li>基金</li>
+            <li>大盘</li>
+            <li>科技</li>
           </ul>
         </div>
-        <div class="header-search-box float-left">
-          <el-input  placeholder="复制（淘宝的标题或者关键字）找优惠券!" size="small"></el-input>
-        </div>
-        <div class="header-search-btn float-left">
-          <el-button type="danger" size="small">搜索</el-button>
+        <div class="header-search">
+          <div class="header-search-box ">
+            <el-input  placeholder="复制（淘宝的标题或者关键字）找优惠券!" size="small"></el-input>
+          </div>
+          <div class="header-search-btn">
+            <el-button type="danger" size="small">搜索</el-button>
+          </div>
         </div>
       </div>
     </div>
@@ -246,28 +249,32 @@
   #nav {
     /* width: 100%; */
     /* float: left; */
-    background: url(https://www.lxtkj.cn/template/keji/static/images/repeat-x.gif) repeat-x 0px top;
+    background: url(../assets/images/repeat-x.gif) repeat-x 0px top;
     height: 69px;
+    display: flex;
+    justify-content: space-between;
   }
   #nav .leftbar {
-    width: 23.75%;
-    background: url(https://www.lxtkj.cn/template/keji/static/images/repeat-x.gif) no-repeat -59px 0px;
-    float: left;
+    width: 20%;
+    background: url(../assets/images/repeat-x.gif) no-repeat -59px 0px;
+    /* float: left; */
     height: 69px;
   }
   #nav .rightbar {
-    /* width: 20%; */
-    background: url(https://www.lxtkj.cn/template/keji/static/images/repeat-x.gif) no-repeat -71px 0px;
-    float: right;
+    width: 20%;
+    background: url(../assets/images/repeat-x.gif) no-repeat -71px 0px;
+    /* float: right; */
     height: 69px;
   }
   #nav .navbar {
     font-size: 14px;
     margin-top: 12px;
     overflow: hidden;
-    float: left;
+    /* float: left; */
     /* margin-left: 30px; */
     width: 1000px;
+    display: flex;
+    justify-content: space-between;
   }
   #nav .navbar li {
     height: 42px;
@@ -297,15 +304,11 @@
     padding-left: 10px;
   }
   #nav:after {
-    content: "";
+    /* content: ""; */
     height: 0;
     display: block;
     visibility: hidden;
     clear: both;
-  }
-
-  .float-left {
-    float: left;
   }
 
   .clear-fix {
@@ -313,6 +316,9 @@
     overflow: auto;
   }
 
+  .header-menu {
+    margin-right: 135px;
+  }
   .header-menu li:hover {
     background: #0000000a;
   }
@@ -320,7 +326,7 @@
   .header-menu li {
     cursor: pointer;
     float: left;
-    color: #000;
+    color: #112a82;
     font-size: 16px;
     font-weight: 600;
     line-height: 70px;
@@ -338,9 +344,15 @@
     font-weight: 600;
     color: #c9302c;
   }
+  .header-search {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .center-box {
-    width: 1140px;
+    width: 1000px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 </style>
