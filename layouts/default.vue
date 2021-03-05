@@ -147,6 +147,20 @@
     box-sizing: border-box;
   }
 
+  .container {
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 1000px;
+    position: relative;
+    display: block;
+  }
+  aside {
+      width: 335px;
+      height: auto;
+      position: relative;
+      float: right;
+  }
+
   *, *:before, *:after {
     box-sizing: border-box;
     margin: 0;

@@ -607,8 +607,8 @@ export default {
 <style>
  @import '../assets/css/index.css';
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
+  /* margin: 0 auto;
+  min-height: 100vh; */
   /* display: flex;
   justify-content: center;
   align-items: center; */

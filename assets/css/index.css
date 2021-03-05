@@ -37,12 +37,12 @@ a {
 	background-color: #fff;
 	padding: 0 20px;
 }
-.container {
+/* .container {
 	width: 1000px;
 	position: relative;
 	margin: auto;
 	display: block;
-}
+} */
 /*logo*/
 .header {
 	width: 100%;
@@ -309,12 +309,12 @@ nav:after {
 	font-weight: 800;
 }
 /*首屏焦点图排行榜*/
-aside {
+/* aside {
 	width: 335px;
 	height: auto;
 	position: relative;
 	float: right;
-}
+} */
 .section-focus-pic {
 	margin: 20px auto 0 auto;
 	height: 200px;
