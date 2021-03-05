@@ -1,10 +1,162 @@
 <template>
-  <div>
+  <!-- <div>
     <h2>Article-detail</h2>
     <p>article id:{{ $route.params.id }}</p>
     <ul>
       <li><a href="/">Home</a></li>
     </ul>
+  </div> -->
+  <div class="container">
+  <!--搜索框-->
+  <div class="details-header clearfix">
+    <div class="position"><a href="/">首页</a>&nbsp;>&nbsp;<a href="#">互联网</a> &gt;  正文</div>
+    <div class="search">
+      <form action="{:url('index/search/index')}" method="post"  target="_blank" id="subform">
+        <input type="hidden" name="show" value="title" />
+        <input type="hidden" name="tempid" value="1" />
+        <input type="hidden" value="news" name="tbname"/>
+        <input type="text" id="keyboard" class="bdan" name="keyboard" placeholder="请输入关键字"/>
+      </form>
+      <a href="#" onclick="document.getElementById('subform').submit();return false"><span class="submit"></span></a> </div>
+  </div>
+  <div class="details-con clearfix">
+    <div class="article-main clearfix">
+      <h1>支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</h1>
+      <div class="articleInfo"> <span class="data">2018-12-15 10:41:09</span> <span>雷小天科技</span> <span>1169</span>
+        <div class="comment">
+          <div class="social clearfix">
+            <div class="t">分享到：</div>
+            <div class="bdsharebuttonbox bdshare-button-style0-16" id="share-bd" text="" desc="" url="">
+              <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+              <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+              <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+              <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article-content">
+        <div class="synopsis_buttom"></div>
+        <!--<div class="ad630_80"><script type="text/javascript" src="__JS__/thea15.js"></script></div>-->
+        <div class="detail_content">
+          <div id="main_content">
+&nbsp; &nbsp; &nbsp; &nbsp;【雷小天科技】刷脸支付有多快？少了掏手机的步骤，用户买一瓶饮料的时间从12秒缩短到5秒。据支付宝方面介绍，卜蜂莲花是首家接入支付宝刷脸支付的超市，其市场部助理副总裁袁林化表示，在引入刷脸支付后，1个收银员可以维护3台自助收银机，收银效率提升了50%，按照收银员3200元的平均工资计算，每年便可节省1344万元的综合成本。
+          </div>
+        </div>
+        <div class="detail_banquan">
+          <!--二维码-->
+          <div class="erweima">
+            <p><img src="../../assets/images/2weima.jpg"></p>
+          </div>
+          <!--声明-->
+          <div class="shengming">
+            <p> 免责声明：本文仅代表作者个人观点，与雷小天科技网无关。其原创性以及文中陈述文字和内容未经本站证实，对本文以及其中全部或者部分内容、文字的真实性、完整性、及时性本站不作任何保证或承诺，请读者仅作参考，并请自行核实相关内容。</p>
+            <p> 本网站有部分内容均转载自其它媒体，转载目的在于传递更多信息，并不代表本网赞同其观点和对其真实性负责，若因作品内容、知识产权、版权和其他问题，请及时提供相关证明等材料并与我们联系，本网站将在规定时间内给予删除等相关处理. </p>
+          </div>
+        </div>
+        <div class="ad630_80">
+
+        </div>
+        <!--猜你喜欢-->
+        <div class="like">
+          <p>精彩推荐</p>
+          <div class="new_content_list">
+            <!--科技新闻列表-->
+            <!--科技新闻列表 end-->
+            <!-- {volist name="like" id="item"} -->
+              <dl class="imgtext mb10">
+              <dt> <a href="{:url('index/content/detail?model_id='.$item['model_id'],array('id'=>$item['id']))}" target="_blank"><img src="https://www.lxtkj.cn/public/images/default.png" width="149" height="100" alt=""></a> </dt>
+              <dd>
+                <h2 class="f18"><a href="{:url('index/content/detail?model_id='.$item['model_id'],array('id'=>$item['id']))}" target="_blank">智能革命席卷前台 好易住亮相中国饭店协会展</a></h2>
+                <p class="fn st" style="padding-top:50px">
+                  <span>2018-12-15 10:41:09  更新</span> <span class="fr"><a href="#" class="read_button" target="_blank">阅读</a></span> </p>
+              </dd>
+            </dl>
+            <!-- {/volist} -->
+
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <aside class="list-r">
+   <div class="div1">
+     <!--广告-->
+      <div class="ad300">
+        <div class="ad300-box">
+          <!-- 科技新闻右侧一 -->
+          <!-- 科技新闻右侧一 end-->
+        </div>
+      </div>
+    <article class="hot-box">
+      <div class="hot-box-title"> 点击排行</div>
+      <div id="tab">
+        <div class="clear"></div>
+        <div class="block" id="con_two_1" style="display: block;">
+          <ul>
+            <li><span class="first">1</span>
+                <a class="tab_title" href="/article/detail-178.html">电脑网络连接中的以太网和本地连接有什么区别?</a>
+              </li>
+              <li><span class="num01">2</span>
+                <a class="tab_title" href="/article/detail-175.html">王者荣耀为什么在上分最后一把总容易遇到坑B？</a>
+              </li>
+              <li><span class="num01">3</span>
+                <a class="tab_title" href="/article/detail-11.html">京东再强又怎样 百度竞价排名坐地收钱无成本</a>
+              </li>
+              <li><span class="num01">4</span>
+                <a class="tab_title" href="/article/detail-154.html">中国互联网市场下沉 三四五线城市会出下一个BAT?</a>
+              </li>
+              <li><span class="num01">5</span>
+                <a class="tab_title" href="/article/detail-59.html">牛津大学开发VR成功治疗恐高症</a>
+              </li>
+              <li><span class="num01">6</span>
+                <a class="tab_title" href="/article/detail-43.html">苹果升级iPhone安全性：拒绝暴力破解</a>
+              </li>
+              <li><span class="num01">7</span>
+                <a class="tab_title" href="/article/detail-43.html">苹果升级iPhone安全性：拒绝暴力破解</a>
+              </li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </article>
+    <!--广告-->
+      <div class="ad300">
+        <div class="ad300-box">
+            <!-- 科技新闻页右侧二 -->
+        </div>
+      </div>
+      <article class="hot-pic">
+        <div class="hot-pic-title">热门图片</div>
+        <ul class="splendid-con">
+          <!-- {volist name="hotdata" id="item"} -->
+            <li class="splendid-items">
+              <a href="{:url('index/content/detail?model_id='.$item['model_id'],array('id'=>$item['id']))}" target="_blank">
+                <div class="img-box"><img src="" alt="xx"></div>
+                <p>{$item['title']|msubstr=###,0,80} </p>
+              </a>
+            </li>
+            <!-- {/volist} -->
+        </ul>
+      </article>
+    </div>
+    <div id="fixed_box">
+     <div id="div_fixed" class="">
+    <!--广告-->
+      <div class="ad300">
+        <div class="ad300-box">
+          tttt
+        </div>
+      </div>
+      <div class="ad300" style="margin-top:10px;">
+        <div class="ad300-box">
+            xxx
+        </div>
+      </div>
+     </div>
+   </div>
+  </aside>
   </div>
 </template>
 <script>
@@ -27,3 +179,6 @@ export default {
   }
 }
 </script>
+<style>
+ @import '../../assets/css/pages2018.css';
+ </style>

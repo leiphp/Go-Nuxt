@@ -4,7 +4,7 @@
     <div id="header">
       <div class="center-box clear-fix">
         <div class="header-logo">
-          <img src="../assets/images/logo.jpg" alt="雷小天科技">
+          <nuxt-link to="/"><img src="../assets/images/logo.jpg" alt="雷小天科技"></nuxt-link>
         </div>
         <div class="header-menu">
           <ul>

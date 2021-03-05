@@ -75,13 +75,13 @@
         <div class="right-con items">
           <ul class="items-content">
             <li class="items-title">
-              <a href="/article/detail-184.html" target="_blank">支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</a>
+              <a href="/article/5" target="_blank">支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</a>
             </li>
             <li>
-              <a href="/article/detail-182.html" target="_blank">高通与苹果在华专利纠纷，iPhone手机在国内市场禁售</a>
+              <a href="/article/detail" target="_blank">高通与苹果在华专利纠纷，iPhone手机在国内市场禁售</a>
             </li>
             <li>
-              <a href="/article/detail-175.html" target="_blank">王者荣耀为什么在上分最后一把总容易遇到坑B？</a>
+              <a href="/article" target="_blank">王者荣耀为什么在上分最后一把总容易遇到坑B？</a>
             </li>
           </ul>
         <div class="clear"></div>
@@ -612,7 +612,7 @@ export default {
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  text-align: center;
+  /* text-align: center; */
 }
 /* 跑马灯 */
 .el-carousel__item h3 {
