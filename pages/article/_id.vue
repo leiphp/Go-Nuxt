@@ -86,6 +86,9 @@
       <div class="ad300">
         <div class="ad300-box">
           <!-- 科技新闻右侧一 -->
+          <a href="https://www.chuanboyi.com/design/search.html" target="_parent">
+            <img src="https://www.newskj.org/d/file/p/2020-11-11/665c3ec36fe8dcf1516078c40515e9c3.png" border="0" width="300" height="250" alt="">
+          </a>
           <!-- 科技新闻右侧一 end-->
         </div>
       </div>
@@ -125,19 +128,44 @@
       <div class="ad300">
         <div class="ad300-box">
             <!-- 科技新闻页右侧二 -->
+            <a href="https://www.chuanboyi.com/design/search.html" target="_parent">
+              <img src="https://www.newskj.org/d/file/p/2019-05-31/4c0dd5082f6a300f4d913eac5237d177.gif" border="0" width="300" height="250" alt="">
+            </a>
         </div>
       </div>
       <article class="hot-pic">
         <div class="hot-pic-title">热门图片</div>
         <ul class="splendid-con">
-          <!-- {volist name="hotdata" id="item"} -->
-            <li class="splendid-items">
-              <a href="{:url('index/content/detail?model_id='.$item['model_id'],array('id'=>$item['id']))}" target="_blank">
-                <div class="img-box"><img src="" alt="xx"></div>
-                <p>{$item['title']|msubstr=###,0,80} </p>
-              </a>
-            </li>
-            <!-- {/volist} -->
+                <li class="splendid-items"> <a href="/gdsp/153794.html" target="_blank">
+          <div class="img-box"><img src="https://www.newskj.org/d/file/news/gdsp/2021-02-26/955b31c0bcdcd2a8ab008bdccde3cb58.jpg" alt="滑盖直板掌机 GPD WIN 3"></div>
+          <p>
+            滑盖直板掌机 GPD WIN 3          </p>
+          </a> </li>
+                <li class="splendid-items"> <a href="/kjxx/153793.html" target="_blank">
+          <div class="img-box"><img src="https://www.newskj.org/d/file/news/kjxx/2021-02-26/468d2d9046aa21ec7fe8b80abe9a40d0.jpg" alt="红魔游戏手机官方宣布新"></div>
+          <p>
+            红魔游戏手机官方宣布新          </p>
+          </a> </li>
+                <li class="splendid-items"> <a href="/kjsh/153792.html" target="_blank">
+          <div class="img-box"><img src="https://www.newskj.org/d/file/news/kjsh/2021-02-26/d2fbe85f45ec31fe039cc036255a05b5.jpg" alt="诺基亚 6300 4G 和 8000"></div>
+          <p>
+            诺基亚 6300 4G 和 8000          </p>
+          </a> </li>
+                <li class="splendid-items"> <a href="/kjcy/153791.html" target="_blank">
+          <div class="img-box"><img src="https://www.newskj.org/d/file/news/kjcy/2021-02-26/55a259351bf31f12cc20fb5eac75cb37.jpg" alt="三星开始向部分旗舰级智"></div>
+          <p>
+            三星开始向部分旗舰级智          </p>
+          </a> </li>
+                <li class="splendid-items"> <a href="/it/153790.html" target="_blank">
+          <div class="img-box"><img src="https://www.newskj.org/d/file/news/it/2021-02-26/af108f4a7cd5ee2bafe1bc54a3ca8c87.jpg" alt="微软将为 Surface Pro 7"></div>
+          <p>
+            微软将为 Surface Pro 7          </p>
+          </a> </li>
+                <li class="splendid-items"> <a href="/shuma/153789.html" target="_blank">
+          <div class="img-box"><img src="https://www.newskj.org/d/file/news/shuma/2021-02-26/631004cee574d09a4be4a1907e70ef85.jpg" alt="联想拯救者 R7000P 2021"></div>
+          <p>
+            联想拯救者 R7000P 2021          </p>
+          </a> </li>
         </ul>
       </article>
     </div>
