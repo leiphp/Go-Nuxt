@@ -31,15 +31,15 @@
         <li>
           <div>
             <a target="_blank" href="javascript:;" class="title">新闻</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>9))}">科技信息</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>10))}">科技产业</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>11))}">业界资讯</a>
+            <a target="_blank" href="/list/4">科技信息</a>
+            <a target="_blank" href="/list/5">科技产业</a>
+            <a target="_blank" href="/list/6">业界资讯</a>
           </div>
           <div class="navbar-item">
             <a target="_blank" href="javascript:;" class="title">金融</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>12))}">股票基金</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>13))}">理财投资</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>14))}">经济热点</a>
+            <a target="_blank" href="/list/1">股票基金</a>
+            <a target="_blank" href="/list/2">理财投资</a>
+            <a target="_blank" href="/list/3">经济热点</a>
           </div>
         </li>
         <li>
@@ -125,7 +125,7 @@
           <span>|</span>
           <a href="http://www.beian.miit.gov.cn">粤ICP备16001325号-5</a>
           <span>|</span>
-          <a target="_blank" href="{:url('index/index/about')}">关于我们</a>
+          <a target="_blank" href="/about">关于我们</a>
           <span>|</span>
           <a target="_blank" href="{:url('index/index/webmap')}">网站地图</a>
           <!-- <span style="top: 8px; position: relative;"><a target="_blank" href="https://v.pinpaibao.com.cn/cert/site/?site=www.lxtkj.cn&amp;at=realname"><img src="__PIC__/aqkx_83x30.png"></a></span> -->
@@ -392,4 +392,72 @@
   .nav-bottom span:hover {
     color: #f33;
   }
+  /*排行榜*/
+.hot-box {
+	border: #ddd 1px solid;
+	margin-top: 10px;
+	width: 333px;
+	background: #efefef;
+}
+#tab {
+	background: #fff;
+	margin: 0px 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.hot-box-title {
+	border-bottom: #ddd 1px solid;
+	text-indent: 10px;
+	font: 14px/40px Microsoft YaHei;
+	height: 40px;
+	position: relative;
+	margin: 10px 10px 0px 10px;
+	background: #fff;
+}
+#tab .up {
+	background: #fff;
+	color: #333;
+	font-weight: 700;
+	border-top: 4px solid #004276;
+}
+#tab h3 {
+	float: left;
+	/*width: 103px;*/
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0 0 0;
+	font-size: 12px;
+	cursor: pointer;
+	background-color: #c5c5c5;
+	text-align: center;
+	color: #5a5a5a;
+	font-family: Microsoft YaHei;
+	font-weight: normal;
+}
+#tab div {
+	left: 0;
+}
+#tab ul li {
+	border-bottom: #ddd 1px solid;
+	line-height: 34px;
+	height: 34px;
+  overflow: hidden;
+  text-align: left;
+}
+#tab ul li span.first {
+	text-indent: 4px !important;
+	width: 16px;
+	display: inline;
+	background: url(../assets/images/sprite.gif) no-repeat left -35px;
+	float: left;
+	color: #fff;
+	margin-right: 10px;
+}
+#tab ul li span.num01 {
+	padding-left: 4px;
+	width: 22px;
+	float: left;
+	color: #666;
+}
 </style>

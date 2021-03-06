@@ -21,6 +21,7 @@ module.exports = {
     "no-console":"off",
     'arrow-parens': 'off',
     'no-multi-spaces':'off',
-    "indent": ["off"]
+    "indent": ["off"],
+    "no-tabs":"off"
   }
 }

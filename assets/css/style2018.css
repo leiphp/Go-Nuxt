@@ -419,7 +419,7 @@ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/star_
 .hot-box {
 	border: #ddd 1px solid;
 	margin-top: 10px;
-	/* width: 333px; */
+	width: 333px;
 	background: #efefef;
 }
 #tab {
