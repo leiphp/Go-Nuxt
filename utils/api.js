@@ -6,6 +6,10 @@ const SUCCESS_CODE = 200
 
 export default {
   SUCCESS_CODE,
+  // 获取文章详情
+  getArticle (aid) {
+    return request.requestGet(baseUrl + 'v1/article', { params: { id: aid } })
+  },
   // 获取分类
   getCategories () {
     return request.requestGet(baseUrl + 'v1/user')

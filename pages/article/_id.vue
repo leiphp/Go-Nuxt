@@ -206,17 +206,19 @@ export default {
       ]
     }
   },
-  asyncData () {
-    console.log('test load data...')
-    api.getCategories().then((res) => {
-      console.log('result', res)
-    })
-  },
-  methods: {
-    created () {
-      const id = this.$route.params.id
-      console.log('id is:', id)
+  async asyncData (ctx) {
+    console.log('asyncData...', ctx.params.id)
+    const res = await api.getArticle(ctx.params.id)
+    console.log('result', res)
+    if (res.code === api.SUCCESS_CODE) {
+        // 拿到分类数据
+      const article = res.data
+      return { info: article }
     }
+  },
+  created () {
+    const id = this.$route.params.id
+    console.log('id is:', id)
   }
 }
 </script>
