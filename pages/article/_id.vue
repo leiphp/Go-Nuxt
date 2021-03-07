@@ -21,7 +21,7 @@
   </div>
   <div class="details-con clearfix">
     <div class="article-main clearfix">
-      <h1>支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</h1>
+      <h1>{{ info.title }}</h1>
       <div class="articleInfo"> <span class="data">2018-12-15 10:41:09</span> <span>雷小天科技</span> <span>1169</span>
         <div class="comment">
           <div class="social clearfix">
@@ -40,7 +40,7 @@
         <!--<div class="ad630_80"><script type="text/javascript" src="__JS__/thea15.js"></script></div>-->
         <div class="detail_content">
           <div id="main_content">
-&nbsp; &nbsp; &nbsp; &nbsp;【雷小天科技】刷脸支付有多快？少了掏手机的步骤，用户买一瓶饮料的时间从12秒缩短到5秒。据支付宝方面介绍，卜蜂莲花是首家接入支付宝刷脸支付的超市，其市场部助理副总裁袁林化表示，在引入刷脸支付后，1个收银员可以维护3台自助收银机，收银效率提升了50%，按照收银员3200元的平均工资计算，每年便可节省1344万元的综合成本。
+            <p v-html="info.content"></p>
           </div>
         </div>
         <div class="detail_banquan">
@@ -195,7 +195,8 @@ export default {
   },
   data () {
     return {
-      title: this.$route.params.title
+      title: this.$route.params.title,
+      info: {}
     }
   },
   head () {
