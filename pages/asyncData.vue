@@ -19,6 +19,10 @@ export default {
     return axios.get('xxx').then((res) => {
       return { info: res.data }
     })
+  },
+  async asyncData () {
+    const { data } = await axios.get('http/www.baidu.com')
+    return { info: data }
   }
 }
 </script>

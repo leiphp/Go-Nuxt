@@ -188,6 +188,7 @@
   </div>
 </template>
 <script>
+import api from '../../utils/api'
 export default {
   validate ({ params }) {
     return /^\d+$/.test(params.id)
@@ -203,6 +204,18 @@ export default {
       meta: [
         { hid: 'description', name: 'article-123', content: 'this is detail page' }
       ]
+    }
+  },
+  asyncData () {
+    console.log('test load data...')
+    api.getCategories().then((res) => {
+      console.log('result', res)
+    })
+  },
+  methods: {
+    created () {
+      const id = this.$route.params.id
+      console.log('id is:', id)
     }
   }
 }

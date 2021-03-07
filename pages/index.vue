@@ -16,8 +16,8 @@
               </p>
             </div>
                 <ul class="isgood-ul">
-                  <li class="isgood-li"> <a href="/article/detail-186.html">快手起诉快手快影侵权，要求赔偿100万元</a> </li>
-                  <li class="isgood-li"> <a href="/article/detail-185.html">苹果股价暴跌，然而这或许只是一个开始</a> </li>
+                  <li class="isgood-li"><nuxt-link :to="{name:'article-id', params:{id: 20}}">快手起诉快手快影侵权，要求赔偿100万元</nuxt-link> </li>
+                  <li class="isgood-li"><nuxt-link :to="{name:'article-id', params:{id: 12}}">苹果股价暴跌，然而这或许只是一个开始</nuxt-link></li>
                   <li class="isgood-li"> <a href="/article/detail-182.html">高通与苹果在华专利纠纷，iPhone手机在国内市场禁售</a> </li>
                   <li class="isgood-li"> <a href="/article/detail-174.html">淘宝退款崩了！难道是剁手党提起刀下不了手后悔了？</a> </li>
                   <li class="isgood-li"> <a href="/article/detail-152.html">中国正建造价值10亿超导计算机 港媒：或改变世界</a> </li>
