@@ -30,7 +30,8 @@
       <ul class="navbar">
         <li>
           <div>
-            <a target="_blank" href="javascript:;" class="title">新闻</a>
+            <a target="_blank" href="javascript:;" class="title">{{tdInfo.name}}</a>
+            <!-- <a v-for="item in categories[0].child_categories" :key="item.id" target="_blank" href="/list/4">{{item.id}}</a> -->
             <a target="_blank" href="/list/4">科技信息</a>
             <a target="_blank" href="/list/5">科技产业</a>
             <a target="_blank" href="/list/6">业界资讯</a>
@@ -134,6 +135,18 @@
   </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['tdInfo'],
+  data () {
+    return {
+      name: 'Default',
+      categories: []
+    }
+  }
+}
+</script>
 
 <style>
   html {

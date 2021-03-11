@@ -12,7 +12,7 @@ export default {
   },
   // 获取分类
   getCategories () {
-    return request.requestGet(baseUrl + 'v1/user')
+    return request.requestGet(baseUrl + 'v1/category/all/category')
   },
   // 获取分类内容
   getCategoryContent (materialId, page) {
@@ -21,5 +21,9 @@ export default {
   // 获取推荐分类
   getRecommendCategories () {
     return request.requestGet(baseUrl + 'v1/recommend/categories/')
+  },
+  // 获取测试用户
+  getUser () {
+    return request.requestGet(baseUrl + 'v1/user')
   }
 }

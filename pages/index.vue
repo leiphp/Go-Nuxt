@@ -536,6 +536,7 @@ import api from '../utils/api'
 export default {
   data () {
     return {
+      tdInfo: {},
       name: 'Hello World',
       active: 'background-color:red',
       daystyle: 'display: block;',
@@ -568,8 +569,9 @@ export default {
   },
   asyncData () {
     console.log('test load data...')
-    api.getCategories().then((res) => {
+    api.getUser().then((res) => {
       console.log('result', res)
+      return { tdInfo: res.data }
     })
     // return axios.get('xxx').then((res) => {
     //   return { info: res.data }
