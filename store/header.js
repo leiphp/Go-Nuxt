@@ -2,29 +2,29 @@
 
 // state
 export const store = () => ({
-  mame: '',
+  mame: '雷小天',
   categories: []
 })
 
 // mutation
 export const mutations = {
-  M_UPDATE_CATEGORIES (cate, payload) {
-    cate.name = '全部分类'
-    cate.categories = payload
+  setCategories (state, payload) {
+    state.name = '全部分类'
+    state.categories = payload
   }
 }
 
-// actions
-export const actions = {
-  A_UPDATE_CATEGORIES ({ commit, cate }, payload) {
-    // 异步业务
-    commit('M_UPDATE_CATEGORIES', payload)
-  }
-}
+// // actions
+// export const actions = {
+//   A_UPDATE_CATEGORIES ({ commit, cate }, payload) {
+//     // 异步业务
+//     commit('M_UPDATE_CATEGORIES', payload)
+//   }
+// }
 
-// getters
-export const getters = {
-  getName (state) {
-    return state.name ? '显示' : '隐藏'
-  }
-}
+// // getters
+// export const getters = {
+//   getName (state) {
+//     return state.name ? '显示' : '隐藏'
+//   }
+// }

@@ -30,60 +30,49 @@
       <ul class="navbar">
         <li>
           <div>
-            <a target="_blank" href="javascript:;" class="title">科技</a>
-            <!-- <a v-for="item in categories[0].child_categories" :key="item.id" target="_blank" href="/list/4">{{item.id}}</a> -->
-            <a target="_blank" href="/list/4">科技信息</a>
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[0].title}}</a>
+            <a v-for="item in $store.state.header.categories[0].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
+            <!-- <a target="_blank" href="/list/4">科技信息</a>
             <a target="_blank" href="/list/5">科技产业</a>
-            <a target="_blank" href="/list/6">业界资讯</a>
+            <a target="_blank" href="/list/6">业界资讯</a> -->
           </div>
           <div class="navbar-item">
-            <a target="_blank" href="javascript:;" class="title">金融</a>
-            <a target="_blank" href="/list/1">股票基金</a>
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[1].title}}</a>
+            <a v-for="item in $store.state.header.categories[1].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
+            <!-- <a target="_blank" href="/list/1">股票基金</a>
             <a target="_blank" href="/list/2">理财投资</a>
-            <a target="_blank" href="/list/3">经济热点</a>
+            <a target="_blank" href="/list/3">经济热点</a> -->
           </div>
         </li>
         <li>
           <div>
-            <a target="_blank" href="javascript:;" class="title">业界</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>15))}">通信</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>16))}">互联网</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>17))}">IT</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>18))}">云计算</a>
-
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[2].title}}</a>
+            <a v-for="item in $store.state.header.categories[2].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
           </div>
           <div class="navbar-item">
-            <a target="_blank" href="javascript:;" class="title">酷玩</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>19))}">游戏</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>20))}">汽车</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>21))}">生活</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>32))}">房产</a>
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[3].title}}</a>
+            <a v-for="item in $store.state.header.categories[3].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
           </div>
         </li>
         <li>
           <div>
-            <a target="_blank" href="javascript:;" class="title">数码</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>22))}">手机</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>23))}">电脑</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>24))}">家电</a>
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[4].title}}</a>
+            <a v-for="item in $store.state.header.categories[4].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
           </div>
           <div class="navbar-item">
-            <a target="_blank" href="javascript:;" class="title">智能</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>25))}">VR</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>26))}">人工智能</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>27))}">硬件</a>
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[5].title}}</a>
+            <a v-for="item in $store.state.header.categories[5].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
           </div>
         </li>
         <li>
           <div>
-            <a target="_blank" href="javascript:;" class="title">科普</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>28))}">科教</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>29))}">医学健康</a>
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[6].title}}</a>
+            <a v-for="item in $store.state.header.categories[6].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
           </div>
           <div class="navbar-item">
-            <a target="_blank" href="javascript:;" class="title">科学</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>30))}">探索</a>
-            <a target="_blank" href="{:url('index/content/lists?model=article',array('id'=>31))}">自然地理</a></div>
+            <a target="_blank" href="javascript:;" class="title">{{$store.state.header.categories[7].title}}</a>
+            <a v-for="item in $store.state.header.categories[7].child_categories" :key="item.id" target="_blank" :href="'/list/'+item.id">{{item.title}}</a>
+          </div>
         </li>
       </ul>
       <div class="rightbar"></div>
@@ -138,12 +127,8 @@
 
 <script>
 export default {
-  props: ['tdInfo'],
-  data () {
-    return {
-      name: 'Default',
-      categories: []
-    }
+  mounted () {
+    console.log('state:', this.$store.state)
   }
 }
 </script>

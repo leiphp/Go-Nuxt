@@ -134,7 +134,7 @@ export default {
   },
   asyncData () {
     console.log('test load data...')
-    api.getCategories().then((res) => {
+    api.getUser().then((res) => {
       console.log('result', res)
     })
     // return axios.get('xxx').then((res) => {

@@ -536,7 +536,7 @@ import api from '../utils/api'
 export default {
   data () {
     return {
-      tdInfo: {},
+      info: {},
       name: 'Hello World',
       active: 'background-color:red',
       daystyle: 'display: block;',
@@ -571,11 +571,23 @@ export default {
     console.log('test load data...')
     api.getUser().then((res) => {
       console.log('result', res)
-      return { tdInfo: res.data }
+      return { info: res.data }
     })
     // return axios.get('xxx').then((res) => {
     //   return { info: res.data }
     // })
+  },
+  // fetch ({ store, params }) {
+  //     return api.getUser().then(res => {
+  //       console.log('info22', res.data)
+  //       store.commit('todos/setName', res.data.name)
+  //     })
+  // },
+  fetch ({ store, params }) {
+      return api.getCategories().then(res => {
+        console.log('info22', res.data)
+        store.commit('header/setCategories', res.data)
+      })
   },
   methods: {
     // 移入
