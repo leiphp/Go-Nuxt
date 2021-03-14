@@ -16,7 +16,9 @@
 <div class="list-box">
 	<div class="list-items">
 		<ul>
-      <li>&nbsp;&nbsp;<a href="/article/detail-184.html" target="_blank" title="支付宝刷脸支付产品，即将开启支付新时代">支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</a> <h4>2018-12-15</h4></li>
+      <li v-for="(item, i) in info.rows" :key="i"><a :href="'/article/'+item.id" target="_blank" :title="item.title">{{item.title}}</a> <h4>2018-12-15</h4></li>
+      <li v-if="key%5==0" style="height: 1px;border-bottom: #d4d4d4 dashed 1px;width: 100%;margin: 15px auto;"></li>
+      <!-- <li>&nbsp;&nbsp;<a href="/article/detail-184.html" target="_blank" title="支付宝刷脸支付产品，即将开启支付新时代">支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</a> <h4>2018-12-15</h4></li>
       <li>&nbsp;&nbsp;<a href="/article/detail-171.html" target="_blank" title="抖音短视频海外市场强势扩张 Facebook有点尴尬">抖音短视频海外市场强势扩张 Facebook有点尴尬</a> <h4>2018-11-03</h4></li>
       <li>&nbsp;&nbsp;<a href="/article/detail-169.html" target="_blank" title="为什么会有1024程序员节？">为什么会有1024程序员节？</a> <h4>2018-10-24</h4></li>
       <li>&nbsp;&nbsp;<a href="/article/detail-26.html" target="_blank" title="第三届互联网大会 探访乌镇黑科技">第三届互联网大会 探访乌镇黑科技</a> <h4>2017-08-19</h4></li>
@@ -28,7 +30,7 @@
       <li>&nbsp;&nbsp;<a href="/article/detail-16.html" target="_blank" title="网站内页与首页要怎样保持风格一致呢">网站内页与首页要怎样保持风格一致呢</a> <h4>2017-06-12</h4></li>
       <li>&nbsp;&nbsp;<a href="/article/detail-13.html" target="_blank" title="电商网站怎么建设才不会令人反感">电商网站怎么建设才不会令人反感</a> <h4>2017-06-10</h4></li>
       <li style="height: 1px;border-bottom: #d4d4d4 dashed 1px;width: 100%;margin: 15px auto;"></li>
-      <li>&nbsp;&nbsp;<a href="/article/detail-12.html" target="_blank" title="网站导航如何做SEO优化？">网站导航如何做SEO优化？</a> <h4>2016-06-06</h4></li>
+      <li>&nbsp;&nbsp;<a href="/article/detail-12.html" target="_blank" title="网站导航如何做SEO优化？">网站导航如何做SEO优化？</a> <h4>2016-06-06</h4></li> -->
 		</ul>
 	</div>
 </div>
@@ -125,6 +127,7 @@ export default {
   data () {
     return {
       name: 'Hello World',
+      info: {},
       active: 'background-color:red',
       daystyle: 'display: block;',
       weekstyle: 'display: none;',
@@ -132,14 +135,15 @@ export default {
       weekclass: ''
     }
   },
-  asyncData () {
-    console.log('test load data...')
-    api.getUser().then((res) => {
-      console.log('result', res)
-    })
-    // return axios.get('xxx').then((res) => {
-    //   return { info: res.data }
-    // })
+  async asyncData (ctx) {
+    console.log('asyncData...', ctx.params.id)
+    const res = await api.getCategoryContent(ctx.params.id, 2, 25)
+    console.log('result', res)
+    if (res.code === api.SUCCESS_CODE) {
+      // 拿到文章分类分页数据
+      const articles = res.data
+      return { info: articles }
+    }
   },
   methods: {
     // 移入

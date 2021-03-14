@@ -15,8 +15,8 @@ export default {
     return request.requestGet(baseUrl + 'v1/category/all/category')
   },
   // 获取分类内容
-  getCategoryContent (materialId, page) {
-    return request.requestGet(baseUrl + 'v1/user/category/' + materialId + '/' + page)
+  getCategoryContent (categoryId, modelId, perPageVal) {
+    return request.requestGet(baseUrl + 'v1/article/list', { params: { category_id: categoryId, model_id: modelId, per_page: perPageVal } })
   },
   // 获取推荐分类
   getRecommendCategories () {
