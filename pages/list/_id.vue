@@ -128,6 +128,7 @@ export default {
     return {
       name: 'Hello World',
       info: {},
+      key: 0,
       active: 'background-color:red',
       daystyle: 'display: block;',
       weekstyle: 'display: none;',
