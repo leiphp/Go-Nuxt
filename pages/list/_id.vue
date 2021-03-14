@@ -17,7 +17,7 @@
 	<div class="list-items">
 		<ul>
       <li v-for="(item, i) in info.rows" :key="i"><a :href="'/article/'+item.id" target="_blank" :title="item.title">{{item.title}}</a> <h4>2018-12-15</h4></li>
-      <li v-if="key%5==0" style="height: 1px;border-bottom: #d4d4d4 dashed 1px;width: 100%;margin: 15px auto;"></li>
+      <!-- <li v-if="key%5==0" style="height: 1px;border-bottom: #d4d4d4 dashed 1px;width: 100%;margin: 15px auto;"></li> -->
       <!-- <li>&nbsp;&nbsp;<a href="/article/detail-184.html" target="_blank" title="支付宝刷脸支付产品，即将开启支付新时代">支付宝刷脸支付产品 "蜻蜓"，即将开启支付新时代</a> <h4>2018-12-15</h4></li>
       <li>&nbsp;&nbsp;<a href="/article/detail-171.html" target="_blank" title="抖音短视频海外市场强势扩张 Facebook有点尴尬">抖音短视频海外市场强势扩张 Facebook有点尴尬</a> <h4>2018-11-03</h4></li>
       <li>&nbsp;&nbsp;<a href="/article/detail-169.html" target="_blank" title="为什么会有1024程序员节？">为什么会有1024程序员节？</a> <h4>2018-10-24</h4></li>
@@ -128,7 +128,6 @@ export default {
     return {
       name: 'Hello World',
       info: {},
-      key: 0,
       active: 'background-color:red',
       daystyle: 'display: block;',
       weekstyle: 'display: none;',
