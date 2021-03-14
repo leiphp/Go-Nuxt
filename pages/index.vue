@@ -577,18 +577,18 @@ export default {
     //   return { info: res.data }
     // })
   },
-  // fetch ({ store, params }) {
-  //     return api.getUser().then(res => {
-  //       console.log('info22', res.data)
-  //       store.commit('todos/setName', res.data.name)
-  //     })
-  // },
   fetch ({ store, params }) {
-      return api.getCategories().then(res => {
+      return api.getUser().then(res => {
         console.log('info22', res.data)
-        store.commit('header/setCategories', res.data)
+        store.commit('todos/setName', res.data.name)
       })
   },
+  // fetch ({ store, params }) {
+  //     return api.getCategories().then(res => {
+  //       console.log('info22', res.data)
+  //       store.commit('header/setCategories', res.data)
+  //     })
+  // },
   methods: {
     // 移入
     mouseOver () {
