@@ -195,13 +195,13 @@ export default {
   },
   data () {
     return {
-      title: this.$route.params.title,
+      title: '',
       info: {}
     }
   },
   head () {
     return {
-      title: this.title,
+      title: this.title + '-雷小天科技',
       meta: [
         { hid: 'description', name: 'article-123', content: 'this is detail page' }
       ]
@@ -214,7 +214,7 @@ export default {
     if (res.code === api.SUCCESS_CODE) {
         // 拿到分类数据
       const article = res.data
-      return { info: article }
+      return { info: article, title: article.title }
     }
   },
   created () {
