@@ -1,11 +1,12 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Go-Nuxt',
+    title: '雷小天科技-综合科技新闻资讯分享门户网站',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'keywords', name: 'keywords', content: '雷小天科技,www.lxtkj.cn,中文科技资讯网,科技新闻,科技资讯,科技媒体,商业科技,科协,科技生活,科学探索,互联,网通信IT,数码电器,绿色环保,财经,科技人物,科技评论' },
+      { hid: 'description', name: 'description', content: '雷小天科技（www.lxtkj.cn）是专业的中文科技新闻网站,依靠传统科技媒体平台，专注于科技新闻，服务经济和社会。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
